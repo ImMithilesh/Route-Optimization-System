@@ -163,26 +163,26 @@ int main()
         }
         case 2:
         {
-            int vehicleChoice;
-            displayVehicleMenu();
-            cin >> vehicleChoice;
+            //int vehicleChoice;
+            //displayVehicleMenu();
+            //cin >> vehicleChoice;
 
-            switch (vehicleChoice)
-            {
-            case 1:
-                optimizer.setVehicle(CAR);
-                cout << "Vehicle set to Car.\n";
-                break;
-            case 2:
-                optimizer.setVehicle(BICYCLE);
-                cout << "Vehicle set to Bicycle.\n";
-                break;
-            case 3:
-                optimizer.setVehicle(WALKING);
-                cout << "Vehicle set to Walking.\n";
-                break;
+            //switch (vehicleChoice)
+            //{
+            //case 1:
+                //optimizer.setVehicle(CAR);
+                //cout << "Vehicle set to Car.\n";
+                //break;
+            //case 2:
+                //optimizer.setVehicle(BICYCLE);
+                //cout << "Vehicle set to Bicycle.\n";
+                //break;
+            //case 3:
+                //optimizer.setVehicle(WALKING);
+                //cout << "Vehicle set to Walking.\n";
+                //break;
             default:
-                cout << "Invalid vehicle choice. Using default (Car).\n";
+                //cout << "Invalid vehicle choice. Using default (Car).\n";
                 optimizer.setVehicle(CAR);
             }
             break;
