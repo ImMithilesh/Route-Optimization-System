@@ -89,25 +89,26 @@ void initializeUserGraph(Graph &graph, int numNodes)
     cout << "\nEnter number of edges: ";
     cin >> edges;
 
+    cout << "Enter source destination index and weight of vehicle Car Bicycle Walking\n";
+    // cout << "\nEdge " << i + 1 << ":\n";
+    cout<<"Enter the edge(0-"<<edges<<")";
     for (int i = 0; i < edges; i++)
     {
         int u, v;
-        cout << "\nEdge " << i + 1 << ":\n";
-        cout << "Enter source node index: ";
-        cin >> u;
-        cout << "Enter destination node index: ";
-        cin >> v;
+        cin >> u>>v;
+        // cout << "Enter destination node index:uu  ";
+        // cin >> v;
 
         map<VehicleType, int> weights;
 
         int car, bicycle, walking;
-        cout << "Enter weight for Car: ";
-        cin >> car;
-        cout << "Enter weight for Bicycle: ";
-        cin >> bicycle;
-        cout << "Enter weight for Walking: ";
-        cin >> walking;
-
+        // cout << "Enter weight for Car: ";
+        // cin >> car;
+        // cout << "Enter weight for Bicycle: ";
+        // cin >> bicycle;
+        // cout << "Enter weight for Walking: ";
+        // cin >> walking;
+        cin>> car >>bicycle>>walking;
         weights[CAR] = car;
         weights[BICYCLE] = bicycle;
         weights[WALKING] = walking;
